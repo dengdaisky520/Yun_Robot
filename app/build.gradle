@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "net.ianying.www.robot"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/resources']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDir 'src/main/jniLibs'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/afinal_0.5.1_bin.jar')
+    compile files('libs/tools.jar')
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.alibaba:fastjson:1.2.7'
+    compile files('libs/Baidu-SpeechRecognitionUI-SDK-Android-1.6.2.jar')
+    compile files('libs/galaxy.jar')
+    compile files('libs/VoiceRecognition-1.6.2.jar')
+    compile files('libs/com.baidu.speechsynthesizer_1.1.2.jar')
+    compile 'com.jiechic.library:xUtils:2.6.14'
+}

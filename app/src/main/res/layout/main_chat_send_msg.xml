@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chat_send_createDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/time_bac"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="2012-09-01 18:30:20"
+        android:textSize="11sp"  />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="50dp"
+         >
+
+        <LinearLayout
+            android:id="@+id/ly_chat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <net.ianying.www.robot.widget.RoundedCornerImageView
+                android:id="@+id/chat_send_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/to" />
+
+            <TextView
+                android:id="@+id/chat_send_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="我"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_send_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ly_chat_icon"
+            android:background="@mipmap/chatto_bg_normal"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:textColor="#000000"
+            />
+        <RelativeLayout
+            android:id="@+id/newsRelative"
+            android:layout_toLeftOf="@id/ly_chat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+           <ImageView
+               android:id="@+id/newsImgIcon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/to"/>
+            <TextView
+                android:id="@+id/newsUrl"
+                android:layout_toRightOf="@id/newsImgIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是标题"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newsSource"
+                android:text="来源"
+                android:layout_alignBottom="@id/newsImgIcon"
+                android:layout_alignLeft="@id/newsUrl"
+                android:layout_alignStart="@id/newsUrl" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

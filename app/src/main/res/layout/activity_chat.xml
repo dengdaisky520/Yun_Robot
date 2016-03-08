@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adrelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/chat_bg_default"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#39BFB4"
+        android:gravity="center"
+        android:text="小云智能机器人"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+     <Button
+         android:onClick="chatMenu"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:background="@mipmap/menus"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <ImageButton
+            android:id="@+id/btn_yuying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="#0000"
+            android:onClick="imbtnYuyin"
+            android:src="@mipmap/yuying" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="#0000"
+            android:onClick="sendMessage"
+            android:src="@mipmap/send" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_yuying"
+            android:background="@drawable/shurukuang"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_yuying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:layout_toRightOf="@id/btn_yuying"
+            android:background="@drawable/shurukuang"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="按住说话..."
+            android:textColor="#39BFB4"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+        <ListView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/top"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollingCache="false" >
+        </ListView>
+
+
+</RelativeLayout>

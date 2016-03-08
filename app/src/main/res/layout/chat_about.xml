@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/chat_bg_default">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="关于"
+                android:textSize="20.0sp" />
+<!--
+            <Button
+                android:id="@id/back"
+                android:layout_width="35.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/btn_back_bg" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="#ff000000" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="关于小云机器人"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="3.0dip"
+            android:background="#CDCDCD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/about_robot"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="关于作者"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="3.0dip"
+            android:background="#CDCDCD" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/about_autor"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</ScrollView>

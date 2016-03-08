@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="帮助"
+            android:textSize="20.0sp" />
+
+       <!-- <Button
+            android:layout_width="35.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            />-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ff000000" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:text="您可以这样问我"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="聊天"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="你好，我长得帅吗"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="挖掘机技术哪家强"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="笑话"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="给我讲个笑话"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="冷笑话"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="故事"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="讲个故事"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="鲁滨逊的故事"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="成语接龙"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="开始成语接龙"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="凶吉"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="解梦：梦到蛇桃花怎么回事"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="张三这个名字好不好"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="新闻"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="我要看新闻"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="体育新闻"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="星座运势"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="今年属猴的运势"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="天蝎座明天的运势"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="百科"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="章泽天百科"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="周星驰的介绍"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="问答"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="地球到月球的距离"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="感冒怎么办"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="图片"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="高圆圆的图片"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="天气"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="常德今天的天气"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="常德今天的空气质量"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="菜谱"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="红烧肉怎么做"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="快递"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="顺丰快递"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="计算"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="3*5="
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="日期"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="现在时间"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="今天星期几"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="列车"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="明天从南昌到北京的火车"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="航班"
+                android:textSize="14.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="3.0dip"
+                android:background="#CDCDCD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:text="明天从常德到深圳的飞机"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

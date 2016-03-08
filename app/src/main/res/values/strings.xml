@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">小云机器人</string>
+    <string name="about_robot">小云机器人是一款智能软件、可以陪你聊天，也可以给你讲笑话，查快递，看天气，查火车，飞机信息等多种功能.并且小云支持语音识别和语音合成，不用打字就可以愉快的和她互动,赶快来试试吧。详细功能介绍请查阅帮助，有任何问题都可联系作者。</string>
+    <string name="about_autor">"    暗影
+    QQ：157007653
+    MAIL：admin@ianying.net
+    欢迎交流（非诚勿扰）"</string>
+    <string name="version_name">小云</string>
+</resources>

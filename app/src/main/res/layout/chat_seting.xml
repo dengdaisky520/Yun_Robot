@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/chat_bg_default"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="设置"
+        android:textSize="24sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#ff000000" />
+     <!--<TextView
+         android:id="@+id/set_nameAndImg"
+         android:padding="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="设置我的图像和昵称"
+         android:textSize="20sp"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CDCDCD" />
+        -->
+    <TextView
+        android:id="@+id/set_help"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帮助"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CDCDCD" />
+    <TextView
+        android:id="@+id/set_about"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CDCDCD" />
+
+    <TextView
+        android:id="@+id/set_checkUpdate"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查更新"
+        android:textSize="20sp"
+        />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/download_progress"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CDCDCD" />
+
+    <TextView
+        android:id="@+id/set_clearMessage"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空聊天记录"
+        android:textSize="20sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="#CDCDCD" />
+
+</LinearLayout>
