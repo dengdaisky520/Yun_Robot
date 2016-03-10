@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="1.0dip"
         android:background="#ff000000" />
-     <!--<TextView
+     <TextView
          android:id="@+id/set_nameAndImg"
          android:padding="10dp"
          android:layout_width="match_parent"

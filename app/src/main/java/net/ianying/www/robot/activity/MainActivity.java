@@ -30,13 +30,14 @@ import android.widget.Toast;
 import com.baidu.voicerecognition.android.VoiceRecognitionConfig;
 import com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog;
 import com.baidu.voicerecognition.android.ui.DialogRecognitionListener;
+import com.socks.library.KLog;
 
 import net.ianying.www.robot.R;
 import net.ianying.www.robot.adapter.ChatMessageAdapter;
 import net.ianying.www.robot.dao.MessageDao;
 import net.ianying.www.robot.entity.ChatMessage;
 import net.ianying.www.robot.utils.HttpUtils;
-import net.ianying.www.robot.utils.PreferenceUtils;
+import net.ianying.www.robot.utils.SpTools;
 import net.ianying.www.robot.utils.SpeechUtil;
 
 import java.text.SimpleDateFormat;
@@ -188,7 +189,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 mDatas.add(allData.get(i));
             }
         } else {
-            mDatas.add(new ChatMessage(ChatMessage.Type.INPUT, "你好，我是小云，很高兴为您服务", "", ""));
+
+                mDatas.add(new ChatMessage(ChatMessage.Type.INPUT, "你好，我是小云，很高兴为您服务", "", ""));
             //保存第一条对话
             messageDao.add(mDatas.get(mDatas.size() - 1));
         }
@@ -232,10 +234,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
 
         ChatMessage to = new ChatMessage(ChatMessage.Type.OUTPUT, msg,
-                PreferenceUtils.getPrefString(MainActivity.this,
-                        PreferenceUtils.USER_NAME, ""),
-                PreferenceUtils.getPrefString(MainActivity.this,
-                        PreferenceUtils.USER_IMAGE, ""));
+                SpTools.getString(this,"nichen",""),
+                SpTools.getString(this, "path", ""));
+        KLog.d(SpTools.getString(this, "path", ""));
         to.setDate(new Date());
         mDatas.add(to);
         messageDao.add(to);
@@ -313,7 +314,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     ArrayList<String> rs = mResults != null ? mResults.getStringArrayList(RESULTS_RECOGNITION) : null;
                     if (rs != null && rs.size() > 0) {
                         final String msg = rs.get(0);
-                        ChatMessage too = new ChatMessage(ChatMessage.Type.OUTPUT, msg, "", "");
+                        ChatMessage too = new ChatMessage(ChatMessage.Type.OUTPUT, msg,  SpTools.getString(MainActivity.this,"nichen",""),
+                                SpTools.getString(MainActivity.this, "path", ""));
                         too.setDate(new Date());
                         mDatas.add(too);
                         messageDao.add(too);

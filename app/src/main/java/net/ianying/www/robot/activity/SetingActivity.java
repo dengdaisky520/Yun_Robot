@@ -44,7 +44,7 @@ import java.net.URLDecoder;
 public class SetingActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView set_about;
-   // private TextView set_nameAndImg;
+    private TextView set_nameAndImg;
     private TextView set_help;
     private TextView set_checkUpdate;
     private TextView set_clearMessage;
@@ -70,14 +70,13 @@ public class SetingActivity extends AppCompatActivity implements View.OnClickLis
         initView();
         set_about.setOnClickListener(this);
         // TODO: 2016/3/4 后续功能添加
-       //set_nameAndImg.setOnClickListener(this);
+       set_nameAndImg.setOnClickListener(this);
         set_help.setOnClickListener(this);
         set_checkUpdate.setOnClickListener(this);
         set_clearMessage.setOnClickListener(this);
         //初始化数据库
         messageDao=new MessageDao(getApplicationContext());
-        //设置广告条
-       // setupBannerAd();
+
     }
 
     /**
@@ -89,7 +88,7 @@ public class SetingActivity extends AppCompatActivity implements View.OnClickLis
         //关于
         set_about = (TextView) findViewById(R.id.set_about);
         //用户图片与姓名
-      //  set_nameAndImg = (TextView) findViewById(R.id.set_nameAndImg);
+       set_nameAndImg = (TextView) findViewById(R.id.set_nameAndImg);
         //帮助
         set_help = (TextView) findViewById(R.id.set_help);
         //检查更新
@@ -104,9 +103,12 @@ public class SetingActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-           /* case R.id.set_nameAndImg: {
+            case R.id.set_nameAndImg: {
+                Intent intent=new Intent();
+                intent.setClass(this,infoActivity.class);
+                startActivity(intent);
                 break;
-            }*/
+            }
             //检查更新
             case R.id.set_checkUpdate: {
                 //显示ProgressDialog

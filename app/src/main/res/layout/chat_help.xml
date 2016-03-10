@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <RelativeLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="40.0dip">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:gravity="center"
             android:text="帮助"
@@ -27,21 +27,21 @@
     </RelativeLayout>
 
     <View
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="1.0dip"
         android:background="#ff000000" />
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5.0dip"
                 android:gravity="center"
@@ -49,7 +49,7 @@
                 android:textSize="18.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -57,7 +57,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -79,7 +79,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -87,7 +87,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -109,7 +109,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -117,7 +117,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -139,7 +139,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -147,7 +147,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -161,7 +161,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -169,7 +169,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -191,7 +191,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -199,7 +199,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -221,7 +221,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -229,7 +229,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -251,7 +251,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -259,7 +259,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -281,7 +281,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -289,7 +289,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -311,7 +311,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -319,7 +319,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -333,7 +333,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -341,7 +341,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -363,7 +363,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -371,7 +371,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -385,7 +385,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -393,7 +393,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -407,7 +407,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -415,7 +415,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -429,7 +429,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -437,7 +437,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -459,7 +459,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -467,7 +467,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"
@@ -481,7 +481,7 @@
                 android:textSize="16.0sp" />
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="18.0dip"
                 android:layout_marginTop="5.0dip"
@@ -489,7 +489,7 @@
                 android:textSize="14.0sp" />
 
             <View
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="2.0dip"
                 android:layout_marginBottom="5.0dip"
                 android:layout_marginTop="3.0dip"

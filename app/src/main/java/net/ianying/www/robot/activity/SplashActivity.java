@@ -8,6 +8,8 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.socks.library.KLog;
+
 import net.ianying.www.robot.R;
 
 /**
@@ -68,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
         alphaAnimation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
-
+               //判断是否获取所有权限(6.0以上有用)
             }
 
             @Override
@@ -97,6 +99,7 @@ public class SplashActivity extends AppCompatActivity {
         Intent startMain=new Intent();
         startMain.setClass(this, MainActivity.class);
         startActivity(startMain);
+        KLog.d("启动界面");
     }
 
 

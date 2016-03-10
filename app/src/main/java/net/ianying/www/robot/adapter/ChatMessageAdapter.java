@@ -1,9 +1,10 @@
 package net.ianying.www.robot.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.text.Html;
 import android.text.Spanned;
-import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,11 +14,16 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.socks.library.KLog;
+
 import net.ianying.www.robot.R;
 import net.ianying.www.robot.entity.ChatMessage;
+import net.ianying.www.robot.utils.SpTools;
 import net.ianying.www.robot.widget.RoundedCornerImageView;
 import net.tsz.afinal.FinalBitmap;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.List;
 
 
@@ -25,7 +31,7 @@ public class ChatMessageAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<ChatMessage> mDatas;
     Context context;
-
+    private  int sum=0;
     private FinalBitmap fb;
 
     public ChatMessageAdapter(Context context, List<ChatMessage> datas) {
@@ -135,15 +141,22 @@ public class ChatMessageAdapter extends BaseAdapter {
             viewHolder.content.setText(chatMessage.getMsg());
         }
         viewHolder.createDate.setText(chatMessage.getDateStr());
-        String nameStr = chatMessage.getName();
-        String imageStr = chatMessage.getImage();
-        if (!TextUtils.isEmpty(nameStr)) {
-            viewHolder.name.setText(nameStr);
-        }
-        if (!TextUtils.isEmpty(imageStr)) {
-            fb.display(viewHolder.imageView, imageStr);
-        }
 
+        String nameStr = SpTools.getString(this.context,"nichen","");
+        String imageStr = SpTools.getString(this.context, "path", "");
+        // TODO: 2016/3/9 后续需改进
+
+        if (chatMessage.getType() == ChatMessage.Type.OUTPUT) {
+            viewHolder.name.setText(nameStr);
+            try {
+                FileInputStream fis = new FileInputStream(imageStr);
+                Bitmap bitmap = BitmapFactory.decodeStream(fis);
+                viewHolder.imageView.setImageBitmap(bitmap);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+                KLog.d("图片未找到");
+            }
+        }
 
         return convertView;
     }
